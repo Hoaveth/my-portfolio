@@ -12,7 +12,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/justine-espinosa/",
+      href: "https://linkedin.com/justine-espinosa",
       style: "rounded-tr-md",
     },
     {
@@ -59,7 +59,7 @@ const SocialLinks = () => {
           >
             <a
               href={link.href ? link.href : "/"}
-              className="flex justify-between items-center w-full text-white font-semibold"
+              className="flex justify-between items-center w-full text-white"
               download={link.download}
               target="_blank"
               rel="noreferrer"
