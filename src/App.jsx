@@ -7,14 +7,16 @@ import Technologies from "./components/Technologies";
 
 function App() {
   return (
-    <div>
+    <>
       <NavBar />
-      <Home />
-      <About />
-      <Portfolio />
-      <Technologies />
-      <SocialLinks />
-    </div>
+      <div className="flex flex-col  justify-evenly">
+        <Home />
+        <About />
+        <Portfolio />
+        <Technologies />
+        <SocialLinks />
+      </div>
+    </>
   );
 }
 

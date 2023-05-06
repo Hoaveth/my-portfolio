@@ -3,8 +3,8 @@ import React from "react";
 const About = () => {
   return (
     <div
-      name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white max-sm:pt-20 max-sm:pb-20"
+      name="experience"
+      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white max-sm:pt-96"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -13,15 +13,15 @@ const About = () => {
           </p>
         </div>
 
-        <div class="card--work-history">
+        <div className="mt-5">
           <strong>🚧 SOFTWARE DEVELOPER | TALLECO JOBTARGET PH </strong>
           <p>09/2022 - Present</p>
-          <p>
+          <p className="mt-5">
             Worked on building automated posting for a specific company's job
             posting to other sites. Built internal projects that would make work
             much efficient and easier.
           </p>
-          <ul>
+          <ul className="list-disc ml-5">
             <li>
               Job Manual Posting is faster by 45% through my internal project
               Browser Plugin that copies and pastes data.
@@ -42,17 +42,17 @@ const About = () => {
           </ul>
         </div>
 
-        <div class="card--work-history">
+        <div className="mt-5">
           <strong>
             🚧 API Beta Tester | National Basketball Association (NBA)
           </strong>
           <p>01/2023 - 02/2023</p>
-          <p>
+          <p className="mt-5">
             Worked with NBA Software Engineers from the Stats Technology
             department to test the NBA APIs for fetching player records, team
             rosters, injuries and many more.
           </p>
-          <ul>
+          <ul className="list-disc ml-5">
             <li>
               Used React to create minigames based on the data fetched from the
               NBA APIs.
@@ -60,20 +60,20 @@ const About = () => {
             <li>Tested API endpoints for bugs and deficiencies.</li>
           </ul>
         </div>
-        <div class="line-break"></div>
+        <div className="line-break"></div>
 
-        <div class="line-break"></div>
-        <div class="card--work-history">
+        <div className="line-break"></div>
+        <div className="mt-5">
           <strong>
             🚧 DEVELOPMENT ENGINEER - TECHNICAL SPECIALIST II | ALLIANCE
             SOFTWARE INC.
           </strong>
           <p>2019 - 2021</p>
-          <p>
+          <p className="mt-5">
             Worked as a full-stack developer and was able to be part of
             different projects locally and abroad.
           </p>
-          <ul>
+          <ul className="list-disc ml-5">
             <li>
               Built an internal project for accomodating device requests from
               employees.

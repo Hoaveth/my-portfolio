@@ -1,35 +1,37 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import mindMate from "../assets/portfolio/p1.png";
+import magic from "../assets/portfolio/p2.png";
+import taskify from "../assets/portfolio/p3.png";
+import reactWeather from "../assets/portfolio/p4.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      title: "MindMate",
+      src: mindMate,
+      repo: "https://github.com/Hoaveth/mindmate",
+      link: "https://mindmate-iota.vercel.app",
     },
     {
       id: 2,
-      src: reactParallax,
+      title: "Magic Memory",
+      repo: "https://github.com/Hoaveth/magic-memory",
+      link: "https://prismatic-longma-fd84b8.netlify.app/",
+      src: magic,
     },
     {
       id: 3,
-      src: navbar,
+      title: "Taskify",
+      repo: "https://github.com/Hoaveth/todo-list-with-typescript",
+      link: "https://hoaveth.github.io/todo-list-with-typescript/",
+      src: taskify,
     },
     {
       id: 4,
-      src: reactSmooth,
-    },
-    {
-      id: 5,
-      src: installNode,
-    },
-    {
-      id: 6,
+      title: "Weather App",
+      repo: "https://github.com/Hoaveth/react-weather-app",
+      link: "https://hoaveth.github.io/react-weather-app/",
       src: reactWeather,
     },
   ];
@@ -37,7 +39,7 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full md:h-screen text-white max-sm:pt-20 max-sm:pb-20"
+      className="bg-gradient-to-b from-black to-gray-800 w-full md:h-screen text-white max-sm:pt-20"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -48,20 +50,29 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, title, src, link, repo }) => (
             <div key={id} className=" shadow-md shadow-violet-700 rounded-lg">
               <img
                 src={src}
                 alt=""
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md duration-200 hover:scale-105 h-56"
               />
+              <p className="m-auto text-center mt-5 font-bold ">{title}</p>
               <div className="flex items-center justify-center">
-                <button className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <a
+                  className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  href={link}
+                  target="_blank"
+                >
                   Demo
-                </button>
-                <button className="px-6 py-3 w-1/2 m-4 duration-200 hover:scale-105">
+                </a>
+                <a
+                  className="px-6 py-3 w-1/2 m-4 duration-200 hover:scale-105"
+                  href={repo}
+                  target="_blank"
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}
