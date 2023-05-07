@@ -72,7 +72,7 @@ const Technologies = () => {
   return (
     <div
       name="technologies"
-      className="bg-gradient-to-b from-gray-800 to-black w-full  max-sm:pt-96 max-sm:pb-10"
+      className="bg-gradient-to-b from-gray-800 to-black w-full md:h-screen max-sm:pt-20  max-sm:pb-10"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
