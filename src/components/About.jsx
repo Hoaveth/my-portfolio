@@ -68,7 +68,7 @@ const About = () => {
             🚧 DEVELOPMENT ENGINEER - TECHNICAL SPECIALIST II | ALLIANCE
             SOFTWARE INC.
           </strong>
-          <p>2019 - 2021</p>
+          <p>04/2019 -04/2021</p>
           <p className="mt-5">
             Worked as a full-stack developer and was able to be part of
             different projects locally and abroad.
